@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Galería de Fotos y Videos</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(233, 168, 168);
+    
+}
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+        }
+        .gallery img, .gallery video {
+            max-width: 100%;
+            height: auto;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
+        }
+        .gallery-item {
+            flex: 1 1 30%;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .gallery-item video {
+            width: 100%;
+            height: auto;
+        }
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 14px;
+            color: #888;
+        }
+
+
+        button {
+            font-size: 3vw;
+            padding: 15px 30px;
+            margin-top: 30px;
+            border: none;
+            margin-left: 200px;
+            background-color: #ff3366;
+            color: white;
+            cursor: pointer;
+            border-radius: 50px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
+        }
+
+        .titulo{
+            color: #ff3366; /* Color vibrante */
+            font-size: 3em; /* Tamaño de fuente grande */
+            text-align: center; /* Centrado */
+            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4); /* Sombra de texto */
+            margin: 20px 0; /* Margen superior e inferior */
+            padding: 15px; /* Espaciado interno */
+            background: rgba(255, 255, 255, 0.9); /* Fondo blanco semitransparente */
+            border-radius: 10px; /* Bordes redondeados */
+            border: 3px solid #ff3366; /* Borde del mismo color que el texto */
+            transition: transform 0.3s ease, color 0.3s ease; /* Transiciones suaves */
+        }
+
+        .titulo:hover {
+    transform: scale(1.1); /* Efecto de aumento al pasar el mouse */
+    color: #ff6699; /* Cambio de color en hover */
+}
+
+        @media (max-width: 768px) {
+            .gallery-item {
+                flex: 1 1 100%;
+            }
+        }
+
+        
+        @keyframes fadeInOut {
+            0%, 100% {
+                opacity: 0.8;
+            }
+            50% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.05);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="titulo">Videos nuestros</h1>
+
+        <div class="gallery">
+            
+            <!-- Video 1 -->
+            <div class="gallery-item">
+                <video controls>
+                    <source src="img\v2.mp4" type="video/mp4">
+                    Tu navegador no soporta la reproducción de videos.
+                </video>
+            </div>
+        </div>
+        <div class="gallery">
+            
+            <!-- Video 1 -->
+            <div class="gallery-item">
+                <video controls>
+                    <source src="img\v3.mp4" type="video/mp4">
+                    Tu navegador no soporta la reproducción de videos.
+                </video>
+            </div>
+        </div>
+        <div class="gallery">
+            
+            <!-- Video 1 -->
+            <div class="gallery-item">
+                <video controls>
+                    <source src="img\v4.mp4" type="video/mp4">
+                    Tu navegador no soporta la reproducción de videos.
+                </video>
+            </div>
+        </div>
+
+
+
+    </div>
+
+    <footer>
+        <p>© 2024 - Tu Nombre - Todos los derechos reservados</p>
+    </footer>
+</body>
+
+<body>
+    <div class="gallery">
+            
+        <!-- Video 1 -->
+        <div class="gallery-item">
+            <img src="img\aniversario.png" alt="Descripción de la imagen 2">
+        </div> 
+    </div>
+    <div>
+        <button onclick="window.location.href='rosas.html'">Un regalo mas☞💛</button>
+    </div>
+</body>
+</html>

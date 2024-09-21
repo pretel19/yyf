@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Fotos</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(233, 168, 168);
+    
+}
+
+        
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .boton {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+        }
+        .gallery img, .gallery video {
+            max-width: 100%;
+            height: auto;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
+        }
+        .gallery-item {
+            flex: 1 1 30%;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .gallery-item video {
+            width: 100%;
+            height: auto;
+        }
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 14px;
+            color: #888;
+        }
+
+
+        button {
+            font-size: 3vw;
+            padding: 15px 30px;
+            margin-top: 30px;
+            border: none;
+            margin-left: 200px;
+            background-color: #ff3366;
+            color: white;
+            cursor: pointer;
+            border-radius: 50px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
+        }
+
+        .poema{
+
+            
+            color: #ff3366; /* Color romántico */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra para darle profundidad */
+            font-size: 0.9em; /* Tamaño de fuente más grande */
+            line-height: 1.5; /* Espaciado entre líneas */
+            text-align: center; /* Centrado */
+            padding: 20px; /* Espaciado interno */
+            margin: 20px; /* Margen externo */
+            background: rgba(255, 255, 255, 0.8); /* Fondo blanco semitransparente */
+            border-radius: 15px; /* Bordes redondeados */
+            border: 2px solid #ff3366; /* Borde del mismo color que el texto */
+            transition: transform 0.3s ease; /* Suavizar la animación */
+
+        }
+        .titulo{
+            color: #ff3366; /* Color vibrante */
+            font-size: 3em; /* Tamaño de fuente grande */
+            text-align: center; /* Centrado */
+            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4); /* Sombra de texto */
+            margin: 20px 0; /* Margen superior e inferior */
+            padding: 15px; /* Espaciado interno */
+            background: rgba(255, 255, 255, 0.9); /* Fondo blanco semitransparente */
+            border-radius: 10px; /* Bordes redondeados */
+            border: 3px solid #ff3366; /* Borde del mismo color que el texto */
+            transition: transform 0.3s ease, color 0.3s ease; /* Transiciones suaves */
+        }
+
+        .titulo:hover {
+    transform: scale(1.1); /* Efecto de aumento al pasar el mouse */
+    color: #ff6699; /* Cambio de color en hover */
+}
+        
+
+        @media (max-width: 768px) {
+            .gallery-item {
+                flex: 1 1 100%;
+            }
+        }
+
+        
+        
+        
+        @keyframes fadeInOut {
+            0%, 100% {
+                opacity: 0.8;
+            }
+            50% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.05);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="titulo">Mis fotos favoritas</h1>
+
+        <div class="gallery">
+            <!-- Imagen 1 -->
+             <h1 class="poema">
+                Cada vez que te miro, me doy cuenta de lo afortunado que soy. 
+                Tu belleza va más allá de lo físico; es tu bondad y tu alegría las que realmente iluminan mi vida. 
+                Eres una persona excepcional, y te amo más de lo que las palabras pueden expresar. Aun recuerdo muy bien
+                esta primera foto que me enviaste, siempre la tendre conmigo.
+             
+            </h1>
+
+
+            <div class="gallery-item">
+                <img src="img\5.jpg" alt="Descripción de la imagen 1">
+            </div>
+            
+        </div>
+        <div class="gallery">
+            <h1 class="poema">
+                Tu sonrisa tiene el poder de transformar mi día. Eres la persona más increíble que he conocido, 
+                con un corazón tan grande y generoso. A tu lado, cada momento se siente especial. 
+                Te amo profundamente, y valoro cada instante que compartimos. Esta segunda fotos
+                en tu colegio, porque fue la foto que te pedi para mi.
+             
+            </h1>
+            <!-- Imagen 2 -->
+            <div class="gallery-item">
+                <img src="img\4.jpg" alt="Descripción de la imagen 2">
+            </div>        
+        </div>
+        <div class="gallery">
+            <h1 class="poema">
+                Hay una magia en ti que me inspira a ser mejor. Tu belleza es solo una parte de lo que te hace única; 
+                tu inteligencia, tu empatía y tu pasión por la vida son lo que realmente me enamora. 
+                Eres la mejor persona que he conocido, y te amo con todo mi ser.
+
+                La foto de tu gradución donde no pude estar :c.
+             
+            </h1>
+            <!-- Imagen 2 -->
+            <div class="gallery-item">
+                <img src="img\1.jpg" alt="Descripción de la imagen 2">
+            </div>        
+        </div>
+
+        <div class="gallery">
+            <h1 class="poema">
+                Eres la luz que ilumina mis días y la calma que trae paz a mi vida. 
+                Tu belleza no solo se refleja en tu apariencia, sino en tu forma de ser, en cómo cuidas de los demás y en cada pequeño gesto de amor que ofreces. 
+                Te amo más de lo que puedo decir, y me siento agradecido de tenerte a mi lado.
+             
+            </h1>
+            <!-- Imagen 2 -->
+            <div class="gallery-item">
+                <img src="img\8.jpeg" alt="Descripción de la imagen 2">
+            </div>        
+        </div>
+
+        <div  class="gallery">
+            <h1 class="poema">
+                Eres un regalo en mi vida, una mezcla perfecta de belleza y bondad. 
+                Cada día, me sorprende la forma en que ves el mundo y cómo haces que todo a tu alrededor brille. Tu risa es la música que alegra mis días, y tu amor me da fuerzas para ser la mejor versión de mí mismo.
+                 Te amo profundamente y siempre estoy agradecido de tenerte a mi lado.
+             
+            </h1>
+            <!-- Imagen 2 -->
+            <div class="gallery-item">
+                <img src="img\7.jpeg" alt="Descripción de la imagen 2">
+            </div>        
+        </div>
+
+
+
+    </div>
+
+    <footer>
+        <p>© 2024 - Tu Nombre - Todos los derechos reservados</p>
+    </footer>
+</body>
+
+<body>
+    <div class="boton">
+        <button onclick="window.location.href='recuerdos.html'">sigue mas☞💛</button>
+    </div>
+</body>
+</html>
